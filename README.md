@@ -1,4 +1,4 @@
-# Education-CMS :calendar: :clipboard:
+# RIRA :clipboard:
 
 Rira Task - Organizational Chart
 
