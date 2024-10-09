@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Lalezar";
+    src: url("../src/assets/fonts/Lalezar/Lalezar-Regular.ttf");
+  }
+  @font-face {
+    font-family: "Vazir Regular";
+    src: url("../src/assets/fonts/Vazir/Vazirmatn-Regular.ttf");
+  }
+  @font-face {
+    font-family: "Vazir Medium";
+    src: url("../src/assets/fonts/Vazir/Vazirmatn-Medium.ttf");
+  }
+}
+
+@layer components {
+  /*common*/
+  .icon {
+    @apply w-12 h-12 cursor-pointer;
+  }
+  .icon-md {
+    @apply w-6 h-6 cursor-pointer;
+  }
+  .icon-sm {
+    @apply w-5 h-5 cursor-pointer;
+  }
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+
+  /*navbar*/
+  .nav-link {
+    @apply flex items-center gap-x-1 gap-y-4 pr-2 text-base text-zinc-700 font-VazirMedium tracking-tightest leading-[56px] transition-colors py-4 md:py-0;
+  }
+  .nav-link:hover {
+    @apply bg-gray-900/15;
+  }
+
+  /*form*/
+  .form-row {
+    @apply flex flex-col items-start md:items-center md:justify-between;
+  }
+  .form-col {
+    @apply flex flex-col items-start w-full mb-2;
+  }
+  .form-col input,
+  .form-col textarea,
+  .form-col select {
+    @apply w-full my-1 py-2 px-4 border border-blue outline-none rounded-md bg-transparent text-sm font-VazirRegular tracking-tighter;
+  }
+
+  .form-col label,
+  .form-col legend {
+    @apply text-blue text-sm lg:text-base font-Lalezar mb-0.5;
+  }
+  .form-input {
+    @apply outline-none bg-transparent border border-blue rounded-md px-3 py-2 lg:py-1.5 text-sm font-VazirRegular tracking-tighter shadow-custom;
+  }
+
+  /*Modal*/
+  .modal {
+    @apply fixed inset-0 z-10 bg-gray-800/70 w-full h-full flex-center opacity-0 invisible transition-all;
+  }
+  .modal.active {
+    @apply visible opacity-100;
+  }
+  .modal-wrapper {
+    @apply p-10 bg-gray-300 rounded-md;
+  }
+  .modal-wrapper h1 {
+    @apply text-xl font-Lalezar text-blue;
+  }
+  .modal-wrapper p {
+    @apply text-base font-VazirMedium text-blue;
+  }
+  .modal-btns {
+    @apply flex-center gap-3 mt-5;
+  }
+  .modal-btn {
+    @apply border border-blue outline-none py-1 px-3 rounded-md text-blue text-lg font-Lalezar w-fit;
+  }
+  .accept-btn {
+    @apply bg-inherit hover:bg-green hover:text-white hover:border-green;
+  }
+  .reject-btn {
+    @apply bg-inherit hover:bg-gold hover:text-white hover:border-gold;
+  }
+}

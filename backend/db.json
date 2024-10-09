@@ -1,0 +1,28 @@
+{
+  "departments": [
+    {
+      "department": "فناوری اطلاعات",
+      "manager": "احدی نیا",
+      "contact": "it@rira.com",
+      "team": "12",
+      "order": 3,
+      "id": 1
+    },
+    {
+      "department": "بازرگانی",
+      "manager": "مظفری",
+      "contact": "commerc@rira.com",
+      "team": "9",
+      "id": 2,
+      "order": 2
+    },
+    {
+      "department": "نرم افزار و برنامه نویسی",
+      "manager": "احمدی",
+      "contact": "dev@rira.com",
+      "team": "25",
+      "order": 1,
+      "id": 3
+    }
+  ]
+}
